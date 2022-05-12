@@ -1,4 +1,10 @@
 .App {
-  font-family: sans-serif;
+  font-family: Roboto;
   text-align: center;
+}
+.algn {
+  text-align: left;
+}
+.algnlf {
+  text-align: right;
 }

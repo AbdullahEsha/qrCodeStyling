@@ -1,1 +1,1 @@
-#Qr Code Styling
+#QrCodeStyling

@@ -9,8 +9,8 @@
   text-align: right;
 }
 
-#bdr {
-  background-color: #a433ff;
-  padding: 50px;
+#bdrOut {
+  padding: 2rem;
   border-radius: 50%;
+  background-color: #a433ff;
 }

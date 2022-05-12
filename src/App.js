@@ -414,7 +414,10 @@ const App = () => {
               </Row> */}
             </Col>
             <Col>
-              <div ref={ref} id="bdr" />
+              <div id="bdrOut">
+                <br />
+                <div ref={ref} id="bdr" />
+              </div>
               <br />
               <br />
               <select

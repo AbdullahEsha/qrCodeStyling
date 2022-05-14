@@ -86,6 +86,10 @@ const App = () => {
         },
       },
     });
+
+    // qrCode.download({
+    //   extension: fileExt,
+    // });
   }, [
     url,
     image,
@@ -101,6 +105,22 @@ const App = () => {
     backgroundColorS,
     backgroundColorE,
   ]);
+
+  console.log(
+    { url },
+    { image },
+    { width },
+    { height },
+    { margin },
+    { imgMargin },
+    { dotsType },
+    { cornersSquareType },
+    { cornersDotType },
+    { dotsColorS },
+    { dotsColorE },
+    { backgroundColorS },
+    { backgroundColorE }
+  );
 
   const onUrlChange = (event) => {
     event.preventDefault();
@@ -207,7 +227,6 @@ const App = () => {
                     id="profilePic"
                     type="file"
                     onChange={onImageChange}
-                    //value={image}
                     className="form-control"
                   />
                 </Col>
@@ -370,15 +389,6 @@ const App = () => {
                   </div>
                 </Col>
               </Row>
-              {/* <br />
-              <Row>
-                <Col className="algn">
-                  <h4>Corners Dot Color</h4>
-                </Col>
-                <Col className="algnlf">
-                  <input type={"color"} /> <input type={"color"} />
-                </Col>
-              </Row> */}
               <br />
               <Row>
                 <Col className="algn">
@@ -397,21 +407,6 @@ const App = () => {
                   />
                 </Col>
               </Row>
-              {/*<br />
-               <Row>
-                <Col className="algn ">
-                  <h4>Image Size</h4>
-                </Col>
-                <Col className="algnlf ">
-                  <input
-                    type={"number"}
-                    className="form-control"
-                    step="0.1"
-                    min="0.0"
-                    max="1.0"
-                  />
-                </Col>
-              </Row> */}
             </Col>
             <Col>
               <div id="bdrOut">
